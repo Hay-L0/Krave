@@ -101,6 +101,23 @@ export function SpotlightNavbar({
     onItemClick?.(item, index);
   };
 
+  const scrollToSection = (href: string) => {
+    const target = document.querySelector(href) as HTMLElement | null;
+    if (!target) return;
+
+    // Dynamically get the navbar height
+    const navbar = document.querySelector("nav");
+    const navbarHeight = navbar ? navbar.getBoundingClientRect().height + 20 : 100;
+
+    const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - navbarHeight;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={cn("relative flex justify-center", className)}>
       <nav
@@ -121,14 +138,7 @@ export function SpotlightNavbar({
                 onClick={(e) => {
                   e.preventDefault();
                   handleItemClick(item, idx);
-
-                  const target = document.querySelector(item.href);
-                  if (target) {
-                    target.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                  }
+                  scrollToSection(item.href);
                 }}
                 className={cn(
                   "px-3.5 py-1.5 text-[13px] font-medium transition-colors duration-200 rounded-full",

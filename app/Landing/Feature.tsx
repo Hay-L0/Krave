@@ -19,18 +19,14 @@ export default function Features() {
       />
 
       <Card
-        className="relative scale-95 mt-32 flex flex-col items-center gap-3 z-10 rounded-[30px] bg-[#DE7329] border-5 border-[#1A3C6E] w-full max-w-[980px] mx-4 h-auto min-h-[480px] py-10 px-4 sm:px-6"
-        style={{
-          boxShadow: "0 25px 50px -12px rgba(222, 115, 41, 0.45), 0 12px 24px -8px rgba(0, 0, 0, 0.25)",
-        }}
-      >
+        className="relative scale-95 mt-32 flex flex-col items-center gap-3 z-10 rounded-[30px] bg-[#DE7329] border-5 border-[#1A3C6E] w-full max-w-245 mx-4 h-auto min-h-120 py-10 px-4 sm:px-6">
         <Image
           src={stove}
           alt="Stoves"
           className="absolute right-0 bottom-0 scale-y-80 scale-x-101 -z-1 opacity-70 hidden md:block"
         />
         <section className="relative z-10 flex flex-col items-center gap-8 sm:gap-10 w-full">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight text-center font-bold text-black">
+          <h1 className="text-3xl mt-10 sm:text-4xl md:text-5xl leading-tight text-center font-bold text-black">
             Join Our
             <br />
             Network
@@ -38,18 +34,14 @@ export default function Features() {
 
           <section className="flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-6 md:gap-8 w-full">
             <Card
-              className="bg-[#1A3C6E] text-white opacity-95 w-full max-w-[380px] h-auto min-h-[260px] rounded-4xl p-5 sm:p-6 flex flex-col justify-between"
-              style={{
-                boxShadow: "0 20px 40px -10px rgba(26, 60, 110, 0.5), 0 8px 16px -8px rgba(0, 0, 0, 0.25)",
-              }}
-            >
+              className="bg-[#1A3C6E] text-white opacity-95 w-full max-w-95 h-auto min-h-65 rounded-4xl p-5 sm:p-6 flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl sm:text-3xl font-bold leading-tight mb-3">
                   Earn More
                   <br />
                   Classes
                 </h3>
-                <p className="text-sm leading-relaxed">
+                <p className="text-20 leading-relaxed">
                   Deliver on foot or bike around campus on
                   <br />
                   your own schedule. Get paid weekly,
@@ -65,18 +57,14 @@ export default function Features() {
             </Card>
 
             <Card
-              className="bg-[#01264D] text-white opacity-95 w-full max-w-[380px] h-auto min-h-[260px] rounded-4xl p-5 sm:p-6 flex flex-col justify-between"
-              style={{
-                boxShadow: "0 20px 40px -10px rgba(1, 38, 77, 0.55), 0 8px 16px -8px rgba(0, 0, 0, 0.3)",
-              }}
-            >
+              className="bg-[#01264D] text-white opacity-95 w-full max-w-95 h-auto min-h-65 rounded-4xl p-5 sm:p-6 flex flex-col justify-between">
               <div>
                 <h3 className="text-2xl sm:text-3xl font-bold leading-tight mb-3">
                   Behind the
                   <br />
                   scenes
                 </h3>
-                <p className="text-sm leading-relaxed">
+                <p className="text-20 leading-relaxed">
                   If you are passionate about helping us
                   <br />
                   achieve our goal to deliver meals
@@ -95,11 +83,8 @@ export default function Features() {
       </Card>
 
       <Card
-        className="relative z-20 scale-95 mt-24 w-full max-w-5xl mx-4 bg-[#01264D] rounded-[30px] p-8 md:p-12 border-0"
-        style={{
-          boxShadow: "0 25px 50px -12px rgba(1, 38, 77, 0.5), 0 12px 24px -8px rgba(0, 0, 0, 0.3)",
-        }}
-      >
+        id="about"
+        className="relative z-20 scale-95 mt-24 w-full max-w-5xl mx-4 bg-[#01264D] rounded-[30px] p-8 md:p-12 border-0">
         <h2 className="text-center leading-15.5 text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10 md:mb-14">
           You Krave It.
           <br />
@@ -131,9 +116,6 @@ export default function Features() {
               <div
                 key={name}
                 className="flex items-center justify-between bg-[#1A3C6E] text-white rounded-xl px-5 py-3.5"
-                style={{
-                  boxShadow: "0 8px 20px -6px rgba(0, 0, 0, 0.35)",
-                }}
               >
                 <span className="font-medium text-sm sm:text-base">{name}</span>
                 <svg

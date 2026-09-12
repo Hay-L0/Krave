@@ -40,7 +40,7 @@ export default function AppPromoSection() {
           </div>
         </div>
 
-        <div className="relative w-full max-w-[280px] lg:max-w-[320px] lg:translate-y-40">
+        <div className="relative w-full max-w-70 lg:max-w-[320px] lg:translate-y-40">
           <Image
             src={Phone}
             alt="Krave App"
